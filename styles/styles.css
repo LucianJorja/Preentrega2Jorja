@@ -23,8 +23,8 @@ footer{
     margin-top: auto;
 }
 .video{
-    width: 395px;
-    height: 702px;
+    width: 360px;
+    height: 509px;
     margin-bottom: 10px;
     padding: 10px;
 }
@@ -53,12 +53,12 @@ footer{
 }
 .productos{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(2,1fr);
     grid-template-areas:
-    "item1 name1 . ."
-    "item2 name2 . ."
-    "item3 name3 . ."
-    "item4 name4 . .";
+    "item1 name1"
+    "item2 name2"
+    "item3 name3"
+    "item4 name4";
     margin-bottom: 10px;
 }
 .item1{
@@ -90,8 +90,8 @@ footer{
     font-family: sans-serif;
 }
 .imagen{
-    width: 280px;
-    height: 278px;
+    width: 260px;
+    height: 258px;
     margin: 10px;
 }
 .space{
@@ -167,7 +167,7 @@ footer{
     }
     .productos{
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(4 ,1fr);
         grid-template-areas:
         "item1 name1 item2 name2"
         "item3 name3 item4 name4";
