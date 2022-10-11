@@ -1,0 +1,109 @@
+@import "variableGlobal";
+@import "generales";
+@import "nav";
+@import "titulo";
+@import "parrafo";
+@import "media";
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+}
+.icon{
+    height: 48px;
+    width: 48px;
+}
+.productos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas:
+    "item1 name1"
+    "item2 name2"
+    "item3 name3"
+    "item4 name4";
+    margin-bottom: 10px;
+}
+.item1{
+    grid-area: item1;
+}
+.item2{
+    grid-area: item2;
+}
+.item3{
+    grid-area: item3;
+}
+.item4{
+    grid-area: item4;
+}
+.name1{
+    grid-area: name1;
+}
+.name2{
+    grid-area: name2;
+}
+.name3{
+    grid-area: name3;
+}
+.name4{
+    grid-area: name4;
+}
+.space{
+    margin-bottom: 10px;
+}
+.icon{
+    height: 48px;
+    width: 48px;
+}
+.instagram{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    padding: 20px;
+    color: $color;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+.letra{
+    font-weight: bolder;
+}
+.link:hover{
+    transition: all;
+    transition-delay: 1ms;
+}
+@media(min-width:1024px){
+    .nav-bar{
+        color: white!important;
+    }
+    .nav-link{
+        margin: 0px 50px;
+        padding: 8px;
+        font-size: 20px;
+        color: white!important;
+    }
+    .nav-link:hover{
+        color: rgb(228,145,195)!important;
+        font-weight: 600;
+    }
+    .container{
+        margin: 10px;
+    }    
+    .productos{
+        display: grid;
+        grid-template-columns: repeat(4 ,1fr);
+        grid-template-areas:
+        "item1 name1 item2 name2"
+        "item3 name3 item4 name4";
+        margin-bottom: 10px;
+    }
+    .container-fluid{
+        height: 70px;
+    }
+    
+}
+
+
+
