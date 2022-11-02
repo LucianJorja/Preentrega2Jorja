@@ -70,7 +70,7 @@ footer .contacto .localidad {
 }
 
 .titulo {
-  font-size: 40px;
+  font-size: 37px;
   margin-top: 30px;
   margin-left: 20px;
   margin-bottom: 20px;
@@ -83,8 +83,8 @@ h1 {
 }
 
 .primerParrafo {
-  font-size: 33px;
-  font-weight: 600;
+  font-size: 28px;
+  font-weight: 500;
   padding: 5px;
   margin-left: 10px;
   color: #013d81;
@@ -92,7 +92,7 @@ h1 {
 }
 
 .segundoParrafo {
-  font-size: 33px;
+  font-size: 30px;
   padding: 5px;
   color: #013d81;
   margin-left: 30px;
