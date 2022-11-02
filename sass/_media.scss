@@ -1,20 +1,24 @@
 .name{
     font-size: 20px;    
-    font-family: sans-serif;
-    
+    font-family: 'Kalam', cursive;
+    font-weight: 600;
+    margin: 0px 0px 10px 20px;
+    color: $color;
+
     @media(min-width:570px){
-        font-size: 24px;
+        font-size: 28px;
+        margin: 20px 0px 10px 70px;
     }
 
     @media(min-width:768px){
-        font-size: 27px;
+        font-size: 30px;
     }
 
 }
 .imagen{
     width: 180px;
     height: 178px;
-    margin: 10px;
+    margin: 0px 0px 20px 0px;
 
     @media(min-width: 570px){
         width: 320px;
@@ -25,40 +29,44 @@
         width: 350px;
         height: 348px;
     }
-
-    @media(min-width: 1024px){
-        width: 388px;
-        height: 376px;
-    }
 }
 .video{
     width: 286px;
     height: 404px;
-    margin-bottom: 10px;
-    padding: 0px 15px 0px 0px;
+    margin: 0px 0px 10px 20px;
+
 
     @media(min-width:570px){
-        width: 545px;
-        height: 969px;
-        padding: 0px 30px 30px 0px;
+        width: 510px;
+        height: 722px;
+        margin: 0px 10px 20px 10px;
     }
 
     @media(min-width:768px){
         width: 600px;
         height: 849px;
+        margin: 0px 0px 20px 70px;
+    }
+    @media(min-width: 1024px){
+        margin: 0px 0px 40px 450px;
     }
 
 }
 
 .fotoIg{
-    width: 275px;
-    height: 523px;
-    margin: 10px 0px 10px 10px;
+    width: 300px;
+    height: 470px;
+    margin: 10px 0px 10px 20px;
 
     @media(min-width:570px){
-        width: 366px;
-        height: 696px;
+        width: 400px;
+        height: 570px;
         margin: 40px;
+    }
+    @media(min-width: 1024px){
+        width: 668px;
+        height: 838px;
+        margin: 30px 0px 30px 200px;
     }
 } 
 .background__color{
@@ -72,4 +80,18 @@
     @media(min-width: 1024px){
         margin:0px 30px 20px 30px;
     }
+}
+.nav-link{
+    font-family: 'Caveat', cursive;
+    margin: 0px 10px;
+    font-size: 28px;
+
+
+    @media(min-width: 1024px){
+        font-size: 28px;
+        margin: 0px 50px;
+        padding: 8px;
+        color: white!important;
+    }
+
 }

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Kalam:wght@300&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -17,6 +19,35 @@ footer {
   width: 100%;
   margin-top: auto;
 }
+footer .contacto {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "Kalam", cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 40px 10px 50px;
+}
+@media (min-width: 1024px) {
+  footer .contacto {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+footer .contacto .icon {
+  height: 30px;
+  width: 30px;
+}
+footer .contacto .tel {
+  font-size: 18px;
+  margin-bottom: 0;
+  margin: 0px 30px 0px 30px;
+}
+footer .contacto .localidad {
+  font-size: 18px;
+  margin: 0px 30px 0px 30px;
+}
 
 .header {
   width: 100%;
@@ -24,7 +55,7 @@ footer {
 
 .color {
   background: rgb(228, 145, 195);
-  background: linear-gradient(to right, rgb(228, 145, 195) 31%, rgb(87, 145, 175) 100%);
+  background: linear-gradient(to right, rgb(228, 145, 195) 31%, rgb(87, 145, 175) 80%);
 }
 
 .toycreando {
@@ -33,9 +64,9 @@ footer {
 }
 
 .navbar-brand {
-  font-size: 25px;
+  font-size: 35px;
   font-weight: 500;
-  font-family: Torus, Inter, "Helvetica Neue", Tahoma, Arial, "Hiragino Kaku Gothic ProN", Meiryo, "Microsoft YaHei", "Apple SD Gothic Neo", sans-serif;
+  font-family: "Caveat", cursive;
 }
 
 .titulo {
@@ -43,7 +74,8 @@ footer {
   margin-top: 30px;
   margin-left: 20px;
   margin-bottom: 20px;
-  font-family: sans-serif;
+  font-weight: 700;
+  font-family: "Kalam", cursive;
 }
 
 h1 {
@@ -51,39 +83,46 @@ h1 {
 }
 
 .primerParrafo {
-  font-size: 28px;
+  font-size: 33px;
+  font-weight: 600;
   padding: 5px;
   margin-left: 10px;
-  font-family: sans-serif;
-  color: #272727;
+  color: #013d81;
+  font-family: "Kalam", cursive;
 }
 
 .segundoParrafo {
-  font-size: 24px;
+  font-size: 33px;
   padding: 5px;
+  color: #013d81;
   margin-left: 30px;
-  font-family: sans-serif;
+  font-family: "Kalam", cursive;
+  font-weight: 500;
 }
 
 .name {
   font-size: 20px;
-  font-family: sans-serif;
+  font-family: "Kalam", cursive;
+  font-weight: 600;
+  margin: 0px 0px 10px 20px;
+  color: blue;
 }
 @media (min-width: 570px) {
   .name {
-    font-size: 24px;
+    font-size: 28px;
+    margin: 20px 0px 10px 70px;
   }
 }
 @media (min-width: 768px) {
   .name {
-    font-size: 27px;
+    font-size: 30px;
   }
 }
 
 .imagen {
   width: 180px;
   height: 178px;
-  margin: 10px;
+  margin: 0px 0px 20px 0px;
 }
 @media (min-width: 570px) {
   .imagen {
@@ -97,43 +136,49 @@ h1 {
     height: 348px;
   }
 }
-@media (min-width: 1024px) {
-  .imagen {
-    width: 388px;
-    height: 376px;
-  }
-}
 
 .video {
   width: 286px;
   height: 404px;
-  margin-bottom: 10px;
-  padding: 0px 15px 0px 0px;
+  margin: 0px 0px 10px 20px;
 }
 @media (min-width: 570px) {
   .video {
-    width: 545px;
-    height: 969px;
-    padding: 0px 30px 30px 0px;
+    width: 510px;
+    height: 722px;
+    margin: 0px 10px 20px 10px;
   }
 }
 @media (min-width: 768px) {
   .video {
     width: 600px;
     height: 849px;
+    margin: 0px 0px 20px 70px;
+  }
+}
+@media (min-width: 1024px) {
+  .video {
+    margin: 0px 0px 40px 450px;
   }
 }
 
 .fotoIg {
-  width: 275px;
-  height: 523px;
-  margin: 10px 0px 10px 10px;
+  width: 300px;
+  height: 470px;
+  margin: 10px 0px 10px 20px;
 }
 @media (min-width: 570px) {
   .fotoIg {
-    width: 366px;
-    height: 696px;
+    width: 400px;
+    height: 570px;
     margin: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .fotoIg {
+    width: 668px;
+    height: 838px;
+    margin: 30px 0px 30px 200px;
   }
 }
 
@@ -152,23 +197,25 @@ h1 {
   }
 }
 
-.redes {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 10px;
+.nav-link {
+  font-family: "Caveat", cursive;
+  margin: 0px 10px;
+  font-size: 28px;
 }
-
-.icon {
-  height: 48px;
-  width: 48px;
+@media (min-width: 1024px) {
+  .nav-link {
+    font-size: 28px;
+    margin: 0px 50px;
+    padding: 8px;
+    color: white !important;
+  }
 }
 
 .productos {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "item1 name1" "item2 name2" "item3 name3" "item4 name4";
-  margin-bottom: 10px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-areas: "name1" "item1" "name2" "item2" "name3" "item3" "name4" "item4";
+  margin: 0px 0px 10px 60px;
 }
 
 .item1 {
@@ -203,17 +250,8 @@ h1 {
   grid-area: name4;
 }
 
-.space {
-  margin-bottom: 10px;
-}
-
-.icon {
-  height: 48px;
-  width: 48px;
-}
-
 .instagram {
-  font-family: sans-serif;
+  font-family: "Kalam", cursive;
   font-size: 20px;
   font-style: normal;
   font-weight: 900;
@@ -224,6 +262,7 @@ h1 {
 }
 
 .letra {
+  font-family: "Kalam", cursive;
   font-weight: bolder;
 }
 
@@ -236,14 +275,8 @@ h1 {
   .nav-bar {
     color: white !important;
   }
-  .nav-link {
-    margin: 0px 50px;
-    padding: 8px;
-    font-size: 20px;
-    color: white !important;
-  }
   .nav-link:hover {
-    color: rgb(228, 145, 195) !important;
+    color: rgb(255, 248, 188) !important;
     font-weight: 600;
   }
   .container {
@@ -251,11 +284,96 @@ h1 {
   }
   .productos {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "item1 name1 item2 name2" "item3 name3 item4 name4";
-    margin-bottom: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "name1 name2" "item1 item2" "name3 name4" "item3 item4";
+    margin: 0px 0px 10px 20px;
   }
   .container-fluid {
     height: 70px;
   }
+}
+.mainContact {
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: rgba(224, 236, 255, 0.959);
+  margin: 0px 15px 10px 15px;
+  padding: 10px;
+}
+@media (min-width: 570px) {
+  .mainContact {
+    margin: 0px 30px 15px 30px;
+  }
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 15px;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 600px;
+  }
+}
+.container .title {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(0, 52, 112);
+}
+.container .user-details {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.container .user-details .input-box input {
+  height: 45px;
+  width: 110%;
+  margin-bottom: 15px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+@media (min-width: 570px) {
+  .container .user-details .input-box input {
+    width: 150%;
+  }
+}
+@media (min-width: 768px) {
+  .container .user-details .input-box input {
+    width: 230%;
+  }
+}
+.container .user-details .mensaje {
+  height: 150px;
+  width: 100%;
+  margin-bottom: 15px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+.container .button {
+  height: 45px;
+}
+.container .button input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  background: linear-gradient(to right, rgb(228, 145, 195) 31%, rgb(87, 145, 175) 80%);
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
 }/*# sourceMappingURL=estilos.css.map */

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="contacto, formulario, juguetes.">
     <meta name="description" content="Contactános a través de nuestro instragram">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/estilos.css">
@@ -13,42 +14,56 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light color">
             <div class="container-fluid">
-                <a class="navbar-brand logo" href="../index.html"><img src="../image/Logue.png" alt="logo" class="toycreando"></a>
+                <a class="navbar-brand logo" href="../index.html"><img src="../image/Logue.png" alt="logo" class="toycreando">Inicio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                     </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                    <a class="nav-link active" aria-current="page" href="productos.html">Productos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="productos.html">Productos</a>
-                </li>                <li class="nav-item">
                     <a class="nav-link" href="servicios.html">Servicios</a>
                 </li>                <li class="nav-item">
                     <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
                 </li>                <li class="nav-item">
                 </div>
             </div>
         </nav>    
     </header>
-    <main class="background__color">
-        <section>
-            <div>
-                <p class="segundoParrafo">
-                    Pueden contactarnos a través de nuesto Instagram.
-                </p>
-                <a class="instagram" href="https://www.instagram.com/toycreando/" target="_blank">Instagram </a>
-            </div>
-            <div>
-                <img src="../image/Screenshot_15.png" alt="foto de la cuenta de instagram (Toycreando)" class="fotoIg">
-            </div>
-        </section>
+    <main class="mainContact">
+        <div class="container">
+            <div class="title">Contactanos!</div>
+            <form action="#">
+                <div class="user-details">
+                    <div class="input-box">
+                        <label for="name">
+                            <input type="name" name="name" id="name" placeholder="Escribe tu nombre...">
+                        </label>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">
+                            <input type="email" name="email" id="email" placeholder="Escribe tu email de contacto...">
+                        </label>
+                    </div><div class="input-box">
+                        <label for="text"></label>
+                        <textarea class="mensaje" name="text" id="text" cols="30" rows="10" placeholder="Escribe tu mensaje..."></textarea>
+                    </div>
+                    <div class="button">
+                        <input type="submit">
+                    </div>
+                </div>
+            </form>
+        </div>
     </main>
     <footer>
-        <div class="redes">
-            <a href="https://www.instagram.com/toycreando/" target="_blank"><img class="icon" src="https://img.icons8.com/color/48/000000/instagram-new--v1.png" /></a>
+        <div class="contacto">Contacto
+            <p class="tel">Tel:(+54 9 381) 6331712 / 5095462</p>
+            <p class="localidad">San Miguel de Tucumán</p>
+            <a href="https://www.instagram.com/toycreando/" target="_blank"><img class="icon" src="https://img.icons8.com/small/452/instagram-new.png"></a>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
